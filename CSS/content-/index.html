@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .box {
+            width: 50%;
+            height: 450px;
+            background-color: rgb(102 , 177, 180);
+        }
+       
+        .box::after {
+             content: "Xin chào các bạn"; 
+        }
+   
+        a::after {
+            content: "("attr(href)")";
+        } 
+       /* đổi màu       */
+        h1:hover {  
+            color: red;
+        }
+        /* đổi màu khi click chuột  */
+        h2:active {
+            color: red;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="box" title="Đây là box màu hồng"></div>
+    <h1>tình yêu màu nắng</h1>
+    <h2>hồng nhan</h2>
+    
+    <!-- lúc chỉnh sửa thì chỉnh sửa được 2 chỗ  -->
+    <a href="https://fullstack.edu.vn/">học lập trình(https://fullstack.edu.vn/)</a>
+</body>
+</html>
